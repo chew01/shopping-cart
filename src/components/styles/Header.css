@@ -1,0 +1,36 @@
+.header {
+  background-color: lightgrey;
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.title {
+  font-family: 'Source Sans Pro';
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 50px;
+}
+
+a {
+  font-family: 'Source Sans Pro';
+  font-size: 20px;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+a:hover {
+  background-color: white;
+}
+
+.on-section {
+  background-color: white;
+}

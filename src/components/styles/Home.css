@@ -1,0 +1,21 @@
+.home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+}
+
+.section-title {
+  font-family: 'Roboto';
+  font-size: 30px;
+}
+
+.splash-overlay {
+  margin: 0;
+  font-family: 'Roboto';
+  color: white;
+  font-size: 4vw;
+  position: absolute;
+  top: 50%;
+}

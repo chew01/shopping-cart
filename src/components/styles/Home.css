@@ -4,6 +4,8 @@
   flex-direction: column;
   align-items: center;
   background-size: cover;
+  box-shadow: inset 0 0 0 50vw rgb(68 53 62 / 30%);
+  animation: fadeIn 1s;
 }
 
 .section-title {
@@ -18,4 +20,5 @@
   font-size: 4vw;
   position: absolute;
   top: 50%;
+  animation: fadeIn 2s;
 }

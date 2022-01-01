@@ -1,0 +1,9 @@
+.shop {
+  flex: 1;
+  background: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  animation: fadeIn 0.5s;
+}

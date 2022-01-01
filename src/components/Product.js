@@ -5,7 +5,9 @@ const Product = (props) => {
   const [quantity, setQuantity] = useState(0);
 
   const handleQuantityChange = (e) => {
-    setQuantity(e.target.value);
+    if (e.target.validity.valid) {
+      setQuantity(e.target.value);
+    }
   };
   const handleAddToCart = () => {
     props.tempCart(props.name, quantity);
@@ -14,7 +16,9 @@ const Product = (props) => {
     setQuantity(quantity + 1);
   };
   const decrement = () => {
-    setQuantity(quantity - 1);
+    if (quantity > 0) {
+      setQuantity(quantity - 1);
+    }
   };
 
   return (
@@ -31,6 +35,7 @@ const Product = (props) => {
             type="text"
             minLength={0}
             maxLength={2}
+            pattern="[0-9]*"
             onChange={handleQuantityChange}
             value={quantity}
           />
